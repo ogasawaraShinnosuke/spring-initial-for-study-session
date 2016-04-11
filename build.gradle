@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'gs-spring-boot'
+    version = '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+//    compile('javax.persistence:persistence-api:1.0.2')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    // tag::actuator[]
+//    compile("org.springframework.boot:spring-boot-starter-actuator")
+
+    //これが原因で落ちる。
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+
+    compile('org.codehaus.groovy:groovy-all:2.4.6')
+    compile('org.postgresql:postgresql:9.4.1208.jre7')
+    // end::actuator[]
+    // tag::tests[]
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    // end::tests[]
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+springBoot {
+    mainClass = 'com.ogasawaraShinnosuke.api.MainApplication'
+}

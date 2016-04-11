@@ -1,0 +1,15 @@
+live:
+  ok: ok
+
+database:
+  url: jdbc:postgresql://localhost:5432/postgres
+  user: shn
+  password: password
+  driverClassName: org.postgresql.Driver
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: shn
+    password: password
+    driverClassName: org.postgresql.Driver
