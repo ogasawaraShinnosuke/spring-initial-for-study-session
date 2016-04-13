@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.490s</div>
+<div class="counter">0.743s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">getIndex</td>
-<td>0.030s</td>
+<td>0.039s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getLive</td>
-<td>0.460s</td>
+<td>0.704s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,33 +92,31 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:42:48.019 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.026 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-13:42:48.033 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-13:42:48.043 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
-13:42:48.061 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@2dde954b declaringClass = 'com.ogasawaraShinnosuke.api.app.RootControllerTest', classes = '{class org.springframework.mock.web.MockServletContext}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
-13:42:48.067 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: class path resource [com/ogasawaraShinnosuke/api/app/RootControllerTest-context.xml] does not exist
-13:42:48.068 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: class path resource [com/ogasawaraShinnosuke/api/app/RootControllerTestContext.groovy] does not exist
-13:42:48.068 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-13:42:48.071 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.076 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: using defaults.
-13:42:48.084 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-13:42:48.097 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-13:42:48.100 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-13:42:48.101 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2699ab55, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47c9b376, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1dbb40a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4076a06e]
-13:42:48.106 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.107 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.112 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.112 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.113 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.113 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.115 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@fe7058f testClass = RootControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@29236db4 testClass = RootControllerTest, locations = '{}', classes = '{class org.springframework.mock.web.MockServletContext}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-13:42:48.116 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.116 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
-13:42:48.383 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-13:42:48.385 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-13:42:48.385 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-13:42:48.387 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+<pre>15:23:24.269 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.286 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:23:24.296 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:23:24.310 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+15:23:24.338 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@2dde954b declaringClass = 'com.ogasawaraShinnosuke.api.app.RootControllerTest', classes = '{class org.springframework.mock.web.MockServletContext}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+15:23:24.348 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: class path resource [com/ogasawaraShinnosuke/api/app/RootControllerTest-context.xml] does not exist
+15:23:24.349 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: class path resource [com/ogasawaraShinnosuke/api/app/RootControllerTestContext.groovy] does not exist
+15:23:24.349 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:23:24.352 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.360 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]: using defaults.
+15:23:24.369 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:23:24.396 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@53efe2c8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5945a7bd, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2afd36ca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d1e2a3a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@514b6ef3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@25c75328]
+15:23:24.400 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.401 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.406 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.406 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.407 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.408 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.411 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@8f6a638 testClass = RootControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@ea915b9 testClass = RootControllerTest, locations = '{}', classes = '{class org.springframework.mock.web.MockServletContext}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+15:23:24.414 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.417 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.RootControllerTest]
+15:23:24.881 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:23:24.883 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:23:24.884 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:23:24.885 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -128,22 +126,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.3.3.RELEASE)
 
-2016-04-13 13:42:49.055  INFO 24711 --- [    Test worker] c.o.api.app.RootControllerTest           : Starting RootControllerTest on ogasawara-no-MacBook-Pro.local with PID 24711 (/Users/shinnosuke/workspace/groovy/spring-initial-for-study-session/build/classes/test started by shinnosuke in /Users/shinnosuke/workspace/groovy/spring-initial-for-study-session)
-2016-04-13 13:42:49.056  INFO 24711 --- [    Test worker] c.o.api.app.RootControllerTest           : No active profile set, falling back to default profiles: default
-2016-04-13 13:42:49.092  INFO 24711 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9a66885: startup date [Wed Apr 13 13:42:49 JST 2016]; root of context hierarchy
-2016-04-13 13:42:49.169  INFO 24711 --- [    Test worker] c.o.api.app.RootControllerTest           : Started RootControllerTest in 0.768 seconds (JVM running for 2.054)
-2016-04-13 13:42:49.474  INFO 24711 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.index()
-2016-04-13 13:42:49.477  INFO 24711 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/live]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.live()
-2016-04-13 13:42:49.576  INFO 24711 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@18079bf4
-2016-04-13 13:42:49.639  INFO 24711 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2016-04-13 13:42:49.639  INFO 24711 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-04-13 13:42:49.641  INFO 24711 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
-2016-04-13 13:42:49.649  INFO 24711 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.index()
-2016-04-13 13:42:49.649  INFO 24711 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/live]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.live()
-2016-04-13 13:42:49.667  INFO 24711 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7d2d5929
-2016-04-13 13:42:49.675  INFO 24711 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2016-04-13 13:42:49.676  INFO 24711 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2016-04-13 13:42:49.676  INFO 24711 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2016-04-13 15:23:25.734  INFO 25766 --- [    Test worker] c.o.api.app.RootControllerTest           : Starting RootControllerTest on ogasawara-no-MacBook-Pro.local with PID 25766 (/Users/shinnosuke/workspace/groovy/spring-initial-for-study-session/build/classes/test started by shinnosuke in /Users/shinnosuke/workspace/groovy/spring-initial-for-study-session)
+2016-04-13 15:23:25.736  INFO 25766 --- [    Test worker] c.o.api.app.RootControllerTest           : No active profile set, falling back to default profiles: default
+2016-04-13 15:23:25.809  INFO 25766 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3ba5ca7b: startup date [Wed Apr 13 15:23:25 JST 2016]; root of context hierarchy
+2016-04-13 15:23:25.967  INFO 25766 --- [    Test worker] c.o.api.app.RootControllerTest           : Started RootControllerTest in 1.064 seconds (JVM running for 3.044)
+2016-04-13 15:23:26.412  INFO 25766 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.index()
+2016-04-13 15:23:26.418  INFO 25766 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/live]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.live()
+2016-04-13 15:23:26.568  INFO 25766 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3546d36e
+2016-04-13 15:23:26.698  INFO 25766 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2016-04-13 15:23:26.699  INFO 25766 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-04-13 15:23:26.700  INFO 25766 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2016-04-13 15:23:26.713  INFO 25766 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.index()
+2016-04-13 15:23:26.714  INFO 25766 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/live]}&quot; onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.live()
+2016-04-13 15:23:26.736  INFO 25766 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@345a6dc1
+2016-04-13 15:23:26.744  INFO 25766 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2016-04-13 15:23:26.744  INFO 25766 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-04-13 15:23:26.745  INFO 25766 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
 </pre>
 </span>
 </div>
@@ -155,7 +153,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 2.3</a> at 2016/04/13 13:42:49</p>
+<a href="http://www.gradle.org">Gradle 2.3</a> at 2016/04/13 15:23:26</p>
 </div>
 </div>
 </body>

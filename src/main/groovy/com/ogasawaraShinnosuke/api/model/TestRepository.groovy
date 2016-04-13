@@ -1,14 +1,12 @@
 package com.ogasawaraShinnosuke.api.model
 
-//import org.springframework.data.domain.Page
-//import org.springframework.data.domain.Pageable
-//import org.springframework.data.repository.Repository
+//import org.springframework.data.repository.CrudRepository
 
 
 interface TestRepository
-//        extends Repository<TestEntity, Long>
+//        extends CrudRepository<TestEntity, Long>
 {
-//    Page<TestEntity> findAll(Pageable pageable)
-//
+//    List<TestEntity> findAll()
+
 //    TestEntity findByName(String name)
 }

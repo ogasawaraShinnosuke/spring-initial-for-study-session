@@ -13,3 +13,13 @@ spring:
     username: shn
     password: password
     driverClassName: org.postgresql.Driver
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
