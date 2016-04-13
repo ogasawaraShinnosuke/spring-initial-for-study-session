@@ -33,7 +33,7 @@ targetCompatibility = 1.8
 
 dependencies {
 //    compile('javax.persistence:persistence-api:1.0.2')
-    compile "org.springframework.boot:spring-boot-starter-web"
+    compile 'org.springframework.boot:spring-boot-starter-web'
     // tag::actuator[]
 //    compile("org.springframework.boot:spring-boot-starter-actuator")
 
@@ -47,7 +47,9 @@ dependencies {
     compile 'org.postgresql:postgresql:9.4.1208.jre7'
     // end::actuator[]
     // tag::tests[]
-    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
     // end::tests[]
 }
 
