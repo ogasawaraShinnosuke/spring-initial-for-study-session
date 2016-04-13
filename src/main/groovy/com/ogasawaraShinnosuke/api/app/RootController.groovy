@@ -1,5 +1,7 @@
 package com.ogasawaraShinnosuke.api.app
 
+import com.ogasawaraShinnosuke.api.model.TestEntity
+import com.ogasawaraShinnosuke.api.model.TestRepository
 import com.ogasawaraShinnosuke.api.service.TestService
 
 import com.ogasawaraShinnosuke.api.util.ConfigUtil

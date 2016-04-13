@@ -1,23 +1,23 @@
 package com.ogasawaraShinnosuke.api.model
 
-//import javax.persistence.Column
+import javax.persistence.Column
 import javax.persistence.Entity
 
 import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
 import javax.persistence.Id
+import javax.persistence.Table
 
 @Entity
-class TestEntity
-//        implements Serializable
-{
-//    private static final long serialVersionUID = 1L
+//@Table(name = 'test')
+class TestEntity implements Serializable {
+    private static final long serialVersionUID = 1L
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id
 
-//    @Column(nullable = true)
+    @Column(nullable = true)
     String name
-
 
 }
