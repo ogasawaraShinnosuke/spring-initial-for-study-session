@@ -1,9 +1,7 @@
 package com.ogasawaraShinnosuke.api.app
 
-import com.ogasawaraShinnosuke.api.model.TestEntity
+import com.ogasawaraShinnosuke.api.service.TestService
 
-//import com.ogasawaraShinnosuke.api.service.TestService
-//import com.ogasawaraShinnosuke.api.service.TestServiceImpl
 import com.ogasawaraShinnosuke.api.util.ConfigUtil
 
 import com.ogasawaraShinnosuke.api.util.DatabaseUtil
@@ -18,30 +16,23 @@ import org.springframework.web.bind.annotation.RestController
 class RootController {
 
     @Autowired
-    ConfigUtil config
+    ConfigUtil configUtil
 
     @Autowired
-    DatabaseUtil util
+    DatabaseUtil databaseUtil
 
-//    @Autowired
-//    TestService testService
+    @Autowired
+    TestService testService
 
     @RequestMapping("/")
     def index() {
-        config.ok()
+        configUtil.ok()
     }
 
     @RequestMapping("/live")
 //    @Transactional(readOnly = true)
     def live() {
-        Sql sql = util.getInstance()
-//        testService.findAll(sql)
-
-//        def tests = testService.findAll(sql)
-        def tests = []
-        sql.eachRow("select * from test") { test ->
-            tests.add(new TestEntity(id: test.id, name: test.name))
-        }
-        tests.each { test -> println "id=$test.id, name=$test.name" }
+        Sql sql = databaseUtil.getInstance()
+        testService.findAll(sql).each { test -> println test }
     }
 }

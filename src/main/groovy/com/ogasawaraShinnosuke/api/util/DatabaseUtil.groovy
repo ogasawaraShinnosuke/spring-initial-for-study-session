@@ -5,13 +5,16 @@ import groovy.sql.Sql
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
-@Component
-class DatabaseUtil {
+@Component('databaseUtil')
+class DatabaseUtil implements Util {
 
     @Autowired
-    DatabaseConfig config
+    DatabaseConfig databaseConfig
 
     Sql getInstance() {
-        Sql.newInstance config.url, config.user, config.password, config.driverClassName
+        Sql.newInstance databaseConfig.url,
+                databaseConfig.user,
+                databaseConfig.password,
+                databaseConfig.driverClassName
     }
 }

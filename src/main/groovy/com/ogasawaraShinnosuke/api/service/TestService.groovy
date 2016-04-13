@@ -1,12 +1,23 @@
 package com.ogasawaraShinnosuke.api.service
 
-import com.ogasawaraShinnosuke.api.model.TestEntity
 import groovy.sql.Sql
 
-interface TestService {
+/**
+ * test table service.
+ */
+trait TestService {
+    /**
+     * select test table by id.
+     * @param sql
+     * @param id
+     * @return
+     */
+    List findById(Sql sql, id) { null }
 
-    TestEntity findById(Sql sql, id)
-
-    TestEntity[] findAll(Sql sql)
-
+    /**
+     * select test table.
+     * @param sql
+     * @return
+     */
+    List findAll(Sql sql) { null }
 }
