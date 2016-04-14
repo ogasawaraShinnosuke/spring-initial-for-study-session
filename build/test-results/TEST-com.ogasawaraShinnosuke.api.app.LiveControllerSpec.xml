@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ogasawaraShinnosuke.api.app.LiveControllerSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-14T08:17:58" hostname="ogasawara-no-MacBook-Pro.local" time="10.841">
+  <properties/>
+  <testcase name="ok" classname="com.ogasawaraShinnosuke.api.app.LiveControllerSpec" time="10.219"/>
+  <testcase name="live" classname="com.ogasawaraShinnosuke.api.app.LiveControllerSpec" time="0.528"/>
+  <testcase name="live_id" classname="com.ogasawaraShinnosuke.api.app.LiveControllerSpec" time="0.093"/>
+  <system-out><![CDATA[17:17:57.878 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.882 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.882 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.883 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.887 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.887 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.891 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.891 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:57.899 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:17:57.907 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:17:57.925 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec] from class [org.springframework.boot.test.WebAppIntegrationTestContextBootstrapper]
+17:17:57.943 [Test worker] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@294a6334 declaringClass = 'com.ogasawaraShinnosuke.api.app.SpecBase', classes = '{class com.ogasawaraShinnosuke.api.MainApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+17:17:57.981 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.SpecBase]: class path resource [com/ogasawaraShinnosuke/api/app/SpecBase-context.xml] does not exist
+17:17:57.982 [Test worker] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.ogasawaraShinnosuke.api.app.SpecBase]: class path resource [com/ogasawaraShinnosuke/api/app/SpecBaseContext.groovy] does not exist
+17:17:57.982 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.ogasawaraShinnosuke.api.app.SpecBase]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:17:57.996 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]
+17:17:58.012 [Test worker] DEBUG o.s.test.util.ReflectionTestUtils - Setting field 'propertySourceProperties' of type [null] on target object [[WebMergedContextConfiguration@57b0c1fb testClass = LiveControllerSpec, locations = '{}', classes = '{class com.ogasawaraShinnosuke.api.MainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] or target class [class org.springframework.test.context.web.WebMergedContextConfiguration] to value [[Ljava.lang.String;@1df91f5a]
+17:17:58.014 [Test worker] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - @TestExecutionListeners is not present for class [com.ogasawaraShinnosuke.api.app.LiveControllerSpec]: using defaults.
+17:17:58.024 [Test worker] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:17:58.046 [Test worker] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@11f5a80b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a209c1f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@45061f5f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45747fc1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@797d2294, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c389c0]
+17:17:58.653 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7bcd2a4f testClass = LiveControllerSpec, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@57b0c1fb testClass = LiveControllerSpec, locations = '{}', classes = '{class com.ogasawaraShinnosuke.api.MainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+17:17:58.673 [Test worker] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7bcd2a4f testClass = LiveControllerSpec, testInstance = com.ogasawaraShinnosuke.api.app.LiveControllerSpec@166db5d7, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@57b0c1fb testClass = LiveControllerSpec, locations = '{}', classes = '{class com.ogasawaraShinnosuke.api.MainApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+17:17:58.729 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:17:58.730 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:17:58.732 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:17:58.740 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2016-04-14 17:17:59.567  INFO 30719 --- [    Test worker] c.o.api.app.LiveControllerSpec           : Starting LiveControllerSpec on ogasawara-no-MacBook-Pro.local with PID 30719 (/Users/shinnosuke/workspace/groovy/spring-initial-for-study-session/build/classes/test started by shinnosuke in /Users/shinnosuke/workspace/groovy/spring-initial-for-study-session)
+2016-04-14 17:17:59.568  INFO 30719 --- [    Test worker] c.o.api.app.LiveControllerSpec           : No active profile set, falling back to default profiles: default
+2016-04-14 17:17:59.637  INFO 30719 --- [    Test worker] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1918c8ca: startup date [Thu Apr 14 17:17:59 JST 2016]; root of context hierarchy
+2016-04-14 17:18:01.313  INFO 30719 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-04-14 17:18:02.116  INFO 30719 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$91107941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-04-14 17:18:02.990  INFO 30719 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-04-14 17:18:03.016  INFO 30719 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-04-14 17:18:03.019  INFO 30719 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-04-14 17:18:03.235  INFO 30719 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-04-14 17:18:03.236  INFO 30719 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3600 ms
+2016-04-14 17:18:04.019  INFO 30719 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2016-04-14 17:18:04.028  INFO 30719 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-04-14 17:18:04.029  INFO 30719 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-04-14 17:18:04.029  INFO 30719 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-04-14 17:18:04.030  INFO 30719 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2016-04-14 17:18:04.878  INFO 30719 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-04-14 17:18:04.933  INFO 30719 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-04-14 17:18:05.072  INFO 30719 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2016-04-14 17:18:05.080  INFO 30719 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-04-14 17:18:05.087  INFO 30719 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-04-14 17:18:05.443  INFO 30719 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-04-14 17:18:06.047  INFO 30719 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2016-04-14 17:18:06.065  INFO 30719 --- [    Test worker] o.h.e.jdbc.internal.LobCreatorBuilder    : HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-04-14 17:18:06.255  INFO 30719 --- [    Test worker] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2016-04-14 17:18:06.617  INFO 30719 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-04-14 17:18:06.617  INFO 30719 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000102: Fetching database metadata
+2016-04-14 17:18:06.622  INFO 30719 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000396: Updating schema
+2016-04-14 17:18:06.656  INFO 30719 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000261: Table found: public.test_entity
+2016-04-14 17:18:06.656  INFO 30719 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000037: Columns: [name, id]
+2016-04-14 17:18:06.656  INFO 30719 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000108: Foreign keys: []
+2016-04-14 17:18:06.656  INFO 30719 --- [    Test worker] o.hibernate.tool.hbm2ddl.TableMetadata   : HHH000126: Indexes: [test_entity_pkey]
+2016-04-14 17:18:06.657  INFO 30719 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000232: Schema update complete
+2016-04-14 17:18:07.754  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1918c8ca: startup date [Thu Apr 14 17:17:59 JST 2016]; root of context hierarchy
+2016-04-14 17:18:07.917  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/live/{id}]}" onto public java.lang.Object com.ogasawaraShinnosuke.api.app.LiveController.live(int)
+2016-04-14 17:18:07.919  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/live]}" onto public java.lang.Object com.ogasawaraShinnosuke.api.app.LiveController.live()
+2016-04-14 17:18:07.922  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.Object com.ogasawaraShinnosuke.api.app.RootController.index()
+2016-04-14 17:18:07.934  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-04-14 17:18:07.943  INFO 30719 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-04-14 17:18:08.007  INFO 30719 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-14 17:18:08.008  INFO 30719 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-14 17:18:08.072  INFO 30719 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-04-14 17:18:08.818  INFO 30719 --- [    Test worker] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-04-14 17:18:08.828  INFO 30719 --- [    Test worker] c.o.api.app.LiveControllerSpec           : Started LiveControllerSpec in 10.078 seconds (JVM running for 12.149)
+2016-04-14 17:18:09.046  INFO 30719 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-04-14 17:18:09.047  INFO 30719 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-04-14 17:18:09.078  INFO 30719 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+[id:1, name:test]
+[id:2, name:ken]
+[id:1, name:test]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
